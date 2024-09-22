@@ -17,3 +17,8 @@
     padding: 4px 6px;
     border-radius: 5px;
   }
+#bg-image-1 {
+  background: url(images/design-1.png);
+  background-size: cover;
+  padding: 40px;
+}
