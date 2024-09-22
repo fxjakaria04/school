@@ -91,12 +91,61 @@
 
     <div class="w-11/12 m-auto">
          <div class="w-11/12 m-auto md:flex md:justify-around bg-gray-100">
-            <div class="input-box-1 w-[48%] bg-white">
+            <div class="input-box-1 md:w-[48%] bg-white p-5 rounded-3xl">
                 <form action="">
-                    <div class="fullname flex flex-col my-[10px]">
+                    <div class="fullname flex flex-col mb-6">
                         <label for="fullname">আপনার সম্পূর্ণ নাম</label>
-                        <input type="text" name="" id="fullname" class="border w-full" placeholder="Your Full Name inline">
+                        <input type="text" name="" id="fullname" class="border w-full mt-2" placeholder="Your Full Name">
                     </div>
+
+                    <div class="flex flex-col mb-6">
+                        <label for="fname">আপনার পিতার সম্পূর্ণ নাম </label>
+                        <input type="text" name="" id="fname" class="border w-full mt-2" placeholder="father full Name">
+                    </div>
+
+                    <div class="fullname flex flex-col mb-6">
+                        <label for="p-address">আপনার স্থায়ী ঠিকানা</label>
+                        <input type="text" name="" id="p-address" class="border w-full mt-2" placeholder="permanent Address">
+                    </div>
+
+                    <div class="flex flex-col mb-6">
+                        <label for="pr-address">আপনার বর্তমান ঠিকানা</label>
+                        <input type="text" name="" id="pr-address" class="border w-full mt-2" placeholder="present address">
+                    </div>
+
+                    <div class="flex flex-col mb-6">
+                        <label for="sub-dist">আপনার থানার নাম</label>
+                        <input type="text" name="" id="sub-dist" class="border w-full mt-2" placeholder="your thana name">
+                    </div>
+
+                    <div class="flex flex-col mb-6">
+                        <label for="dist">আপনার জেলার নাম</label>
+                        <input type="text" name="" id="dist" class="border w-full mt-2" placeholder="Your District Name">
+                    </div>
+
+                    <div class="flex flex-col mb-6">
+                        <label for="division">আপনার বিভাগের নাম</label>
+                        <input type="text" name="" id="division" class="border w-full mt-2" placeholder="Your division Name">
+                    </div>
+
+                    <div class="flex flex-col mb-6">
+                        <label for="nid">জাতীয় পরিচয়পত্র নং</label>
+                        <input type="text" name="" id="nid" class="border w-full mt-2" placeholder="National id No">
+                    </div>
+                    <div class="flex flex-col mb-6">
+                        <div class="label-box flex items-center">
+                            <label for="training-center">ট্রেনিং সেন্টার আছে কি ?</label>
+                            <div class="radio-area ml-16">
+                                <label for="yes">হ্যাঁ</label>
+                                <input type="radio" name="training" id="yes">
+
+                                <label for="no" class="ml-3">না</label>
+                                <input type="radio" name="training" id="no">
+                            </div>
+                        </div>
+                        <input type="text" name="" id="training-center" class="border w-full mt-2 hidden" placeholder="Your Full Name inline">
+                    </div>
+
                 </form>
             </div>
             <div class="input-box-2 w-[48%] bg-white">
@@ -144,6 +193,23 @@
                     unlist.classList.add("top-[-400]")
                 }
             }
+
+            const yesRadio = document.getElementById('yes');
+            const noRadio = document.getElementById('no');
+            const inputfield = document.getElementById('training-center');
+
+            yesRadio.addEventListener('change', () => {
+                if (yesRadio.checked) {
+                    inputfield.classList.remove("hidden");
+                }
+            });
+
+            noRadio.addEventListener('change', () => {
+                if (noRadio.checked) {
+                    console.log("NO I CAN'T");
+                    inputfield.classList.add("hidden");
+                }
+            });
     </script>
 </body>
 </html>
