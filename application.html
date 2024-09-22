@@ -68,6 +68,9 @@
                 <li class="hover:text-gray-400 duration-300 px-4 my-6 md:my-0">
                     <a href="contract.html">Contract Us</a>
                 </li>
+                <li class="hover:text-gray-400 duration-300 px-4 my-6 md:my-0">
+                    <a href="partnership.html">Partnership</a>
+                </li>
                 
             </ul>
     
@@ -91,7 +94,7 @@
 
     <div class="w-11/12 m-auto mt-4">
          <div class="w-11/12 m-auto md:flex md:justify-around bg-white">
-            <div class="input-box-1 md:w-[48%]  bg-gray-100 p-5 rounded-3xl">
+            <div class="input-box-1 md:w-[48%]  bg-gray-100 p-5 rounded-3xl rounded-bl-none rounded-br-none md:rounded-bl-3xl md:rounded-br-3xl">
                 <form action="">
                     <div class="fullname flex flex-col mb-6">
                         <label for="fullname">আপনার সম্পূর্ণ নাম</label>
@@ -105,7 +108,38 @@
 
                     <div class="fullname flex flex-col mb-6">
                         <label for="p-address">আপনার স্থায়ী ঠিকানা</label>
-                        <input type="text" name="" id="p-address" class="border w-full mt-2" placeholder="permanent Address">
+                        <!-- <input type="text" name="" id="p-address" class="border w-full mt-2" placeholder="permanent Address"> -->
+                         <div class="select-box md:flex md:items-center md:justify-around mt-2">
+
+                            <select name="" id="division" class="w-1/5">
+                                <option value="">বিভাগ</option>
+                                <option value="barisal">বরিশাল</option>
+                                <option value="চাট্টগ্রাম">চাট্টগ্রাম</option>
+                                <option value="">ঢাকা</option>
+                                <option value="">খুলনা</option>
+                                <option value="">রাজশাহী</option>
+                                <option value="">রংপুর</option>
+                                <option value="">ময়মনসিংহ</option>
+                                <option value="">সিলেট</option>
+                             </select>
+
+                            <select name="" id="district" class="w-1/5">
+                                <option value="">জেলা</option>
+                             </select>
+
+                            <select name="" id="" class="w-1/5">
+                                <option value="">উপজেলা</option>
+                                <option value="">Hello</option>
+                                <option value="">Hello</option>
+                             </select>
+
+                            <select name="" id="" class="w-1/5">
+                                <option value="">গ্রাম</option>
+                                <option value="">Hello</option>
+                                <option value="">Hello</option>
+                             </select>
+                             
+                         </div>
                     </div>
 
                     <div class="flex flex-col mb-6">
@@ -148,10 +182,88 @@
 
                 </form>
             </div>
-            <div class="input-box-2 w-[48%] bg-white">
-                
+            <div class="input-box-2 md:mt-0 rounded-tl-none md:rounded-tl-3xl md:rounded-tr-3xl rounded-tr-none md:w-[48%] bg-gray-100 rounded-3xl">
+                <form action="">
+                    <div class="fullname flex flex-col mb-6">
+                        <label for="phone">আপনার মোবাইল নম্বর </label>
+                        <input type="text" name="" id="phone" class="border w-full mt-2" placeholder="+880 1234567890">
+                    </div>
+
+                    <div class="flex flex-col mb-6">
+                        <label for="email">আপনার ইমেইল ঠিকানা</label>
+                        <input type="text" name="" id="email" class="border w-full mt-2" placeholder="example@gmail.com">
+                    </div>
+
+                    <div class="flex flex-col mb-6">
+                        <label>আপনার শিক্ষাগত যোগ্যতা </label>
+                        <!-- <input type="text" name="" id="p-address" class="border w-full mt-2" placeholder="permanent Address"> -->
+                        <div class="inputbox w-11/12 m-auto mt-2">
+                            <input type="checkbox" name="edu" id="ssc">
+                            <label for="ssc">এস.এস.সি /সমমান</label><br>
+                            <input type="checkbox" name="edu" id="hsc">
+                            <label for="hsc">এইচ.এস.সি /সমমান</label><br>
+                            <input type="checkbox" name="edu" id="hons">
+                            <label for="hons">অনার্স /সমমান</label><br>
+                            <input type="checkbox" name="edu" id="masters">
+                            <label for="masters">মাস্টার্স /সমমান</label><br>
+                            <input type="checkbox" name="edu" id="others">
+                            <label for="others">অন্যান্য</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mb-6">
+                        <label>আপনার বর্তমান পেশা</label>
+                        <!-- <input type="text" name="" id="p-address" class="border w-full mt-2" placeholder="permanent Address"> -->
+                        <div class="inputbox w-11/12 m-auto mt-3">
+                            <input type="checkbox" name="designation" id="job">
+                            <label for="job">চাকরি</label><br>
+                            <input type="checkbox" name="designation" id="business">
+                            <label for="business">ব্যবসায়</label><br>
+                            <input type="checkbox" name="designation" id="self-implyment">
+                            <label for="self-implyment">আত্মকর্মসংস্থান</label><br>
+                            <input type="checkbox" name="designation" id="freelancing">
+                            <label for="freelancing">ফ্রিলান্সিং</label><br>
+                            <input type="checkbox" name="designation" id="unimployed">
+                            <label for="unimployed">বেকার</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mb-3">
+                        <label>সমজাতীয় অন্য IT কোম্পানিতে কাজ করেন কি না ?</label>
+                        <!-- <input type="text" name="" id="p-address" class="border w-full mt-2" placeholder="permanent Address"> -->
+                        <div class="inputbox w-11/12 m-auto mt-2">
+                            <input type="radio" name="yesno" id="ha">
+                            <label for="ha">হ্যাঁ</label><br>
+                            <input type="radio" name="yesno" id="na">
+                            <label for="na">না</label>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col mb-3">
+                        <label>ঢাকায় এসে ট্রেনিং করতে পারবেন কি না ?</label>
+                        <!-- <input type="text" name="" id="p-address" class="border w-full mt-2" placeholder="permanent Address"> -->
+                        <div class="inputbox w-11/12 m-auto mt-2">
+                            <input type="radio" name="yesnoo" id="yess">
+                            <label for="yess">হ্যাঁ</label><br>
+                            <input type="radio" name="yesnoo" id="noo">
+                            <label for="noo">না</label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="flex flex-col mb-6">
+                        <label for="any-que">আপনার প্রশ্ন থাকলে লিখুন </label>
+                        <textarea name="" id="any-que" class="border w-full mt-2" placeholder="Write here if you have any questions"></textarea>
+                    </div>
+                </form>
             </div>
          </div>
+    </div>
+
+    <div class="submit-area w-full text-center my-8">
+        <button class="bg-[#3247A6] text-white px-3 py-1 rounded-xl">Submit</button>
+    </div>
+
+    <div class="fotter flex items-center justify-center">
+        <img class="w-11/12 md:w-6/12" src="https://pngimg.com/d/under_construction_PNG42.png" alt="">
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -210,6 +322,38 @@
                     inputfield.classList.add("hidden");
                 }
             });
+
+            const districts = {
+        'barisal': ['বরিশাল', 'ঝালকাঠী', 'পটুয়াখালী'],
+        'চট্টগ্রাম': ['চট্টগ্রাম', 'কক্সবাজার', 'বান্দরবান'],
+        'ঢাকা': ['ঢাকা', 'নারায়ণগঞ্জ', 'গাজীপুর'],
+        'খুলনা': ['খুলনা', 'যশোর', 'সাতক্ষীরা'],
+        'রাজশাহী': ['রাজশাহী', 'নাটোর', 'বগুড়া'],
+        'রংপুর': ['রংপুর', 'দিনাজপুর', 'গাইবান্ধা'],
+        'ময়মনসিংহ': ['ময়মনসিংহ', 'শেরপুর', 'হালুয়াঘাট'],
+        'সিলেট': ['সিলেট', 'মৌলভীবাজার', 'হবিগঞ্জ']
+    };
+
+    function updateDistricts() {
+        const divisionSelect = document.getElementById('division');
+        const districtSelect = document.getElementById('district');
+        
+        // Clear the current options in the district select
+        districtSelect.innerHTML = '<option value="">জেলা</option>';
+
+        // Get the selected division
+        const selectedDivision = divisionSelect.value;
+
+        // If a division is selected, populate the districts
+        if (selectedDivision in districts) {
+            districts[selectedDivision].forEach(district => {
+                const option = document.createElement('option');
+                option.value = district;
+                option.textContent = district;
+                districtSelect.appendChild(option);
+            });
+        }
+    }
     </script>
 </body>
 </html>

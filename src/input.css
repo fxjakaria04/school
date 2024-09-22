@@ -9,7 +9,11 @@
 .bg-gradient-custom {
     background: linear-gradient(182deg, rgba(231, 230, 230, 0.79) 1.93%, rgba(230, 237, 237, 0.62) 48.18%, rgba(99, 169, 89, 0.70) 98.07%);
 }   
-.input-box-1 form div input {
+.input-box-1, form div input {
+    padding: 4px 6px;
+    border-radius: 5px;
+  }
+.input-box-2, form div input {
     padding: 4px 6px;
     border-radius: 5px;
   }
