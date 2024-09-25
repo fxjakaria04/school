@@ -37,3 +37,12 @@
   .nav-item {
     @apply hover:text-gray-400 duration-200 px-4 my-6 md:my-0;
   }
+  .btn-primary {
+    @apply bg-[#3247A6] text-white px-5 py-1 rounded-xl hover:bg-[#5063b4];
+  }
+  .flexbox-between {
+    @apply flex items-center justify-between;
+  }
+  .starting {
+    @apply w-10/12 m-auto mt-5 p-6 text-center bg-gradient-to-t from-[#F4F3F3] via-[#E9EFFD] to-[#F2F2F2];
+  }
