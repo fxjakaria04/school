@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom CSS */
+.border-custom {
+    border: 3px solid rgba(182, 219, 220, 0.40);
+}
+
+.bg-gradient-custom {
+    background: linear-gradient(182deg, rgba(231, 230, 230, 0.79) 1.93%, rgba(230, 237, 237, 0.62) 48.18%, rgba(99, 169, 89, 0.70) 98.07%);
+}   
+.input-box-1, form div input {
+    padding: 4px 6px;
+    border-radius: 5px;
+  }
+.input-box-2, form div input {
+    padding: 4px 6px;
+    border-radius: 5px;
+  }
+  .popular {
+    transform: rotate(-45deg);
+    left: -34px;
+    top: 25px;
+  }
+  #youtube-video {
+    background: url(../src/images/Screenshot_1\ 2.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 0px;
+  }
+  .saya {
+    box-shadow: 2px 3px 5px gray;
+  }
+  .nav-item {
+    @apply hover:text-gray-400 duration-200 px-4 my-6 md:my-0;
+  }

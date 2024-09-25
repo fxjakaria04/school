@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnership Applycation Form</title>
+    <link rel="stylesheet" href="output/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar border-3 bg-gradient-to-t from-[#E7E6E6] via-[#E6EDED] to-[#63A959]">
+        <div class="top-nav md:flex md:items-center md:justify-between md:mx-32 sm:mx-10">
+            <div class="contact w-full md:w-auto flex items-center text-sm">
+                <div class="phone m-2">
+                    <span class="md:flex md:items-center">
+                        <ion-icon name="call-outline"></ion-icon>
+                        +880 1860424344
+                    </span>
+                </div>
+                <div class="mail">
+                    <span class="md:flex md:items-center">
+                        <ion-icon name="mail-unread" class="mr-1"></ion-icon>
+                        mmitsolution18@gmail.com 
+                    </span>
+                </div>
+            </div>
+            <div class="icons text-xl hidden md:block">
+                <a href="#"><i class="fa-brands fa-facebook text-blue-700 hover:scale-125 duration-200"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube text-red-500 hover:scale-125 duration-200"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin text-blue-700 hover:scale-125 duration-200"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest text-red-600 hover:scale-125 duration-200"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter hover:scale-125 duration-200"></i></a>
+            </div>
+        </div>
+
+        <nav class="px-5 dark:bg-gray-700 border-b md:flex md:items-center md:justify-evenly">
+            <div class=" dark:text-white text-gray-950 w-full md:w-auto flex items-center justify-between">
+                <span class="text-2xl cursor-pointer">
+                    <a href="">
+                        <img src="src/images/logo2.png" class="w-44 inline" alt="">
+                    </a>
+                </span>
+                <span class="md:hidden flex items-center">
+                    <div class="mood flex items-center cursor-pointer md:block">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"><i class="fa-solid fa-grip px-3 py-2"></i></a>
+                    </div>
+
+                    <div class="mood text-xs flex items-center md:hidden cursor-pointer">
+                        <ion-icon onclick="menu(this)" name="menu" class="text-2xl md:hidden px-3"></ion-icon>
+                    </div>
+                </span>
+            </div>
+            <ul class="text-gray-900 text-xl md:flex items-center md:static absolute w-full md:bg-transparent bg-white left-0 md:w-auto py-4 md:py-0 pl-7 md:pl-0 md:opacity-100 opacity-0">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html">services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="application.html">Partner</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contract.html">Contract Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="partnership.html">Partnership</a>
+                </li>
+                <li class="nav-item">
+                    <a href="billing.html">Billing</a>
+                </li>
+                
+            </ul>
+    
+            <div class="mood text-xs items-center cursor-pointer hidden md:block">
+            </div>
+    
+            <div class="mood text-2xl hidden items-center cursor-pointer md:block">
+                <ion-icon name="search" class="px-3 py-2 rounded-l-xl hover:scale-125 duration-200"></ion-icon>
+                <ion-icon onclick="mood(this)" id="surjo"  class="px-3 py-2 rounded-r-xl hover:scale-125 duration-200" name="grid"></ion-icon>
+            </div>
+        </nav>
+        
+    </div>
+
+    <div class="w-10/12 m-auto mt-5 p-6 text-center bg-gradient-to-t from-[#F4F3F3] via-[#E9EFFD] to-[#F2F2F2] flex justify-between md:justify-start flex-col md:flex-row">
+        <div class="w-full flex justify-between md:justify-start flex-col md:flex-row border-b pb-3">
+            <div class="md:mr-3 md:mb-0 mx-2 md:w-3/12 flex items-center justify-between flex-row">
+                <div class="flex items-center justify-center flex-row">
+                    <i class="fa-solid fa-house-chimney-user md:text-2xl text-xl p-2 mr-2 bg-[#D9D9D9]"></i>
+                    <div class="text-left text-[#6F6E6E]">
+                        <p class="font-semibold">Account</p>
+                        <p>Enter credentials</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-right text-[#111111]"></i>
+                </div>
+            </div>
+            <div class="md:mr-3 md:mb-0 mx-2 md:w-3/12 flex items-center justify-between flex-row">
+                <div class="flex items-center justify-center flex-row">
+                    <i class="fa-solid fa-house-chimney-user md:text-2xl text-xl bg-[#D9D9D9] p-2 mr-2"></i>
+                    <div class="text-left text-[#6F6E6E]">
+                        <p class="font-semibold">Account</p>
+                        <p>Enter credentials</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-right text-[#111111]"></i>
+                </div>
+            </div>
+            <div class="md:mr-3 md:mb-0 mx-2 md:w-3/12 flex items-center justify-between flex-row">
+                <div class="flex items-center justify-center flex-row">
+                    <i class="fa-solid fa-house-chimney-user md:text-2xl text-xl p-2 mr-2 bg-[#65A5FE]"></i>
+                    <div class="text-left text-[#6F6E6E]">
+                        <p class="font-semibold text-[#65A5FE]">Account</p>
+                        <p class="">Enter credentials</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-right text-[#111111]"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-10/12 m-auto mt-5 p-6 bg-gradient-to-t from-[#F4F3F3] via-[#E9EFFD] to-[#F2F2F2] flex justify-between md:justify-start flex-col md:flex-row items-center">
+        <div class="w-full esk-flexbox-between">
+            <div class="md:w-7/12">
+                <div class="w-full">
+                    <p class="text-[##111111] font-semibold text-2xl">Select Plan</p>
+                    <p class="text-[##111111] text-lg">Fill the below form to create a new account</p><br>
+                </div>
+                <div class="mb-5 w-full md:flex md:items-center md:justify-around">
+                    <div class="md:mb-0 mb-5 cursor-pointer p-5 bg-[#D9D9D9] text-center shadow-blue-950 saya">
+                        <p class="font-semibold text-xl my-1">SMS Package</p>
+                        <p class="text-lg">3000 TK/Year</p>
+                        <p class="text-xs">1050 SMS Balance</p>
+                    </div>
+                    <div class="cursor-pointer p-5 bg-[#D9D9D9] text-center shadow-blue-950 saya">
+                        <p class="font-semibold text-xl my-1">SMS Package</p>
+                        <p class="text-lg">10000 TK/Year</p>
+                        <p class="text-xs">3300 SMS Balance</p>
+                    </div>
+                </div>
+                <div class="mb-5 w-full md:flex md:items-center md:justify-around">
+                    <div class="cursor-pointer p-5 bg-gradient-to-b from-[#A6A4A7] via-[#DDCFED] to-[#9E95A9] text-center saya">
+                        <p class="font-semibold text-xl my-1">SMS Package</p>
+                        <p class="text-lg">5000 TK/Year</p>
+                        <p class="text-xs">1700 SMS Balance</p>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <p class="text-[##111111] font-semibold text-2xl">Payment Options</p>
+                    <p class="text-[##111111] text-lg">Be sure to click on correct payment option</p><br>
+                    <form action="">
+                        <input type="radio" name="pay-meth" id="bank">
+                        <label for="bank">Bank</label><br>
+                        <input type="radio" name="pay-meth" id="m-bank">
+                        <label for="m-bank">Mobile Bank</label>
+                    </form>
+                    <div class="mt-3 md:mt-4">
+                        <a href="#" class="text-[#65A5FE] mt-5 hover:underline">
+                            <i class="fa-solid fa-chevron-left text-[#111111]"></i>
+                            Back to Login
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-5/6 w-full flex items-center justify-between mt-3">
+                    <button class="border rounded-xl px-2 text-lg text-white bg-[#227FFF] hover:underline">
+                        <a href="billing2.html">Previous</a>
+                    </button>
+                    <button class="border rounded-xl px-6 text-lg text-white bg-[#32A657] hover:underline">
+                        <a href="#">Sumbit</a>
+                    </button>
+                </div>
+                
+            </div>
+            <div class="flex items-center justify-center w-5/12 mt-5 md:mt-0">
+                <img src="src/images/Group 59.png" class="md:w-10/12 w-full" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const DOME = document.querySelector("html");
+        const heading = document.querySelector("h1");
+            function mood(e){
+                console.log(e);
+                console.log(e.innerHTML);
+                if(e.name === "sunny"){
+                    DOME.classList.add("dark")
+
+                    // heading.innerHTML = "Dark Mood Enabled";
+                }else if (e.name === "moon"){
+                    DOME.classList.remove("dark")
+                    // heading.innerHTML = "Light mood Enabled";
+                }
+                if(e.innerHTML === "Dark" || e.name === "moon"){
+                    DOME.classList.add("dark")
+                    document.getElementById("surjo").style.color = "black";
+
+                }else if (e.innerHTML === "Light" || e.name === "sunny"){
+                    DOME.classList.remove("dark")
+                    heading.innerHTML = "Light mood Enabled";
+                }
+            }
+            const unlist = document.querySelector("ul");
+            function menu (e){
+                console.log(e.name)
+                if (e.name === "menu"){
+                    e.name = "close";
+                    // unlist.classList.add("top-[80px]");
+                    unlist.classList.remove("opacity-0")
+                    unlist.classList.remove("top-[-400]")
+                }else if(e.name === "close"){
+                    e.name = "menu"
+                    unlist.classList.add("opacity-0")
+                    unlist.classList.add("top-[-400]")
+                }
+            }
+    </script>
+</body>
+</html>
