@@ -1,19 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Custom CSS */
-.border-custom {
+
+@layer components {
+  
+  .border-custom {
     border: 3px solid rgba(182, 219, 220, 0.40);
 }
 
 .bg-gradient-custom {
-    background: linear-gradient(182deg, rgba(231, 230, 230, 0.79) 1.93%, rgba(230, 237, 237, 0.62) 48.18%, rgba(99, 169, 89, 0.70) 98.07%);
+  background: linear-gradient(182deg, rgba(231, 230, 230, 0.79) 1.93%, rgba(230, 237, 237, 0.62) 48.18%, rgba(99, 169, 89, 0.70) 98.07%);
 }   
 .input-box-1, form div input {
-    padding: 4px 6px;
-    border-radius: 5px;
+  padding: 4px 6px;
+  border-radius: 5px;
   }
-.input-box-2, form div input {
+  .input-box-2, form div input {
     padding: 4px 6px;
     border-radius: 5px;
   }
@@ -38,7 +40,7 @@
     @apply hover:text-gray-400 duration-200 px-4 my-6 md:my-0;
   }
   .btn-primary {
-    @apply bg-[#3247A6] text-white px-5 py-1 rounded-xl hover:bg-[#5063b4];
+    @apply bg-[#3247A6] text-white px-5 py-2 rounded-xl hover:bg-[#5063b4];
   }
   .flexbox-between {
     @apply flex items-center justify-between;
@@ -46,3 +48,4 @@
   .starting {
     @apply w-10/12 m-auto mt-5 p-6 text-center bg-gradient-to-t from-[#F4F3F3] via-[#E9EFFD] to-[#F2F2F2];
   }
+}
